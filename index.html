@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Technology Dashboard</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="p-8">
+
+<nav class="center-nav mb-8">
+	<a href="index.html" class="hover:bg-gray-700 transition duration-300">Home</a>
+	<a href="insert.html" class="hover:bg-gray-700 transition duration-300">Submit Domains</a>
+	<a href="#" class="hover:bg-gray-700 transition duration-300">Data</a>
+	<a href="#" class="hover:bg-gray-700 transition duration-300">DB</a>
+</nav>
+<br><br>
+<h3 class="text-center text-4xl font-bold mb-6">Domain Monitor</h3>
+
+<table>
+	<thead>
+	<tr>
+		<th>Domain Name</th>
+		<th>Est Value</th>
+		<th>Place</th>
+		<th>Time to Left</th>
+	</tr>
+	</thead>
+	<tbody id="dashboardBody">
+	<!-- Data will be dynamically populated here -->
+	</tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/fetch.js"></script>
+</body>
+</html>
