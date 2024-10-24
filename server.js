@@ -12,10 +12,10 @@ app.set('view engine', 'ejs');
 
 // MySQL Connection
 const db = mysql.createConnection({
-    host: 'sql10.freemysqlhosting.net',
-    user: 'sql10680817',
-    password: 'KgeD46wZT9',
-    database: 'sql10680817' // Assuming the database name is the same as the username, but you might need to confirm this
+    host: '#',
+    user: '#',
+    password: '#',
+    database: '#' // Assuming the database name is the same as the username, but you might need to confirm this
 });
 
 db.connect((err) => {
@@ -30,8 +30,8 @@ db.connect((err) => {
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'naoufalelhlou@gmail.com', // Replace with your email
-        pass: 'ylhj tsjv gkos izsv' // Replace with your email password or an app-specific password
+        user: '#', // Replace with your email
+        pass: '#' // Replace with your email password or an app-specific password
     }
 });
 // Function to format time as hh:mm
@@ -49,8 +49,8 @@ function sendEmailAlert(domainName, timeLeft, timeLeftInMinutes) {
     const currentTime = formatTime(new Date());
 
     const mailOptions = {
-        from: 'naoufalelhlou@gmail.com', // Replace with your email
-        to: 'naoufalelhlou@gmail.com', // Replace with the recipient's email
+        from: '#', // Replace with your email
+        to: '#', // Replace with the recipient's email
         subject: `Urgent: ${domainName} Expiring Soon!`,
         text: `The domain ${domainName} has less than ${hoursLeft} hour left. Current time: ${currentTime}. Expiry time: ${timeLeft}.`
     };
