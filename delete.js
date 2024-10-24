@@ -2,10 +2,10 @@ const mysql = require('mysql');
 
 // MySQL database configuration
 const dbConfig = {
-    host: 'sql10.freemysqlhosting.net',
-    user: 'sql10680817',
-    password: 'KgeD46wZT9',
-    database: 'sql10680817'
+    host: '#',
+    user: '#',
+    password: '#',
+    database: '#'
 };
 
 // Create a connection to the database
